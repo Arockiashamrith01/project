@@ -1,0 +1,33 @@
+.text{
+    background-color:rgb(102, 113, 126);
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+} 
+body{
+    background-color:aliceblue; 
+}   
+.number{
+    margin-top: 20px;
+    margin-left: 40px;
+    gap: 15px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,30px);
+}
+.text input{
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 30px;
+    font-size:large;
+    width: 160px;
+}
+.number button{
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
