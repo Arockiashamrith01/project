@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.robot{
+    height: 550px;
+    width: 500px;
+    background-color:aliceblue;
+}
+.head{
+    margin:0 auto;
+    width: 200px;
+    height: 170px;
+    margin-top: 100px;
+    background-color: chartreuse;
+    border-radius: 50% 50% 20% 20%;
+}
+.eye{
+        display: flex;
+        justify-content: space-around;
+}
+.left_eye{
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: 60px;
+}
+.right_eye{
+    width: 25px;
+    height: 25px;
+    background-color:white;
+    border-radius: 50%;
+    margin-top: 60px;
+}
+.middle_body{
+       margin: 0 auto;
+       display: flex;
+       width:300px;
+       justify-content: space-around;
+}
+.left_hand{
+    height: 150px;
+    width: 30px;
+    border-radius: 30px;
+    margin-top: 30px;
+    background-color:chartreuse;
+}
+.body{
+    height:180px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: chartreuse;
+    margin-top: 20px;
+}
+.right_hand{
+    height: 150px;
+    width: 30px;
+    border-radius: 30px;
+    margin-top: 30px;
+    background-color:chartreuse;
+}
+.lower{
+     margin:0 auto;
+     display: flex;
+     justify-content: space-around;
+     width: 150px;
+}
+.left_leg{
+          height: 150px;
+          width: 30px;
+          background-color: chartreuse;
+          border-radius: 30px;
+}
+.right_leg{
+    height: 150px;
+    width: 30px;
+    background-color: chartreuse;
+    border-radius: 30px;
+}
+.robot:hover{
+    background-color: aqua;
+}
+.robot:hover .head,
+.robot:hover .body,
+.robot:hover .left_hand,
+.robot:hover .right_hand,
+.robot:hover .left_leg,
+.robot:hover .right_leg{
+    background-color: grey;
+}
+.robot:hover .left_eye,
+.robot:hover .right_eye{
+    background-color: black;
+}
+.robot:hover .head{
+    width: 220px;
+    transition:background-color 1.0s ease-in-out;
+    animation: head_position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+@keyframes head_position{
+    0%{
+        width: 200px;
+        transform: rotate(0deg);
+    }
+    50%{
+        width: 190px;
+        transform: rotate(15deg);
+    }
+    75%{
+        width: 200px;
+        transform: rotate(-15deg);
+    }
+   }
+.robot:hover .body{
+    width: 220px;
+    transition:background-color 1.0s ease-in-out;
+    animation: body_position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+@keyframes body_position{
+    0%{
+        width: 200px;
+        transform: rotate(0deg);
+    }
+    50%{
+        width: 190px;
+        transform: rotate(10deg);
+    }
+    75%{
+        width: 200px;
+        transform: rotate(-15deg);
+    }
+}
+.robot:hover .left_hand{
+    width: 20px;
+    transition:background-color 1.0s ease-in-out;
+    animation: left_hand_position;
+    animation-iteration-count: infinite;
+    transform-origin: top;
+    animation-duration: 0.5s;
+}
+@keyframes left_hand_position{
+    0%{
+        width: 30px;
+        transform: rotate(0deg);
+    }
+    50%{
+        width: 35px;
+        transform: rotate(30deg);
+    }
+}
+.robot:hover .right_hand{
+    width: 20px;
+    transition:background-color 1.0s ease-in-out;
+    animation: right_hand_position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    transform-origin: top;
+}
+@keyframes right_hand_position{
+    0%{
+        width: 30px;
+        transform: rotate(0deg);
+    }
+    50%{
+        width: 35px;
+        transform: rotate(-30deg);
+    }
+}
+.robot:hover .right_leg{
+    width: 20px;
+    transition:background-color 1.0s ease-in-out;
+    animation: right_leg_position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    transform-origin: top;
+}
+@keyframes right_leg_position{
+    0%{
+        width: 30px;
+        transform: rotate(0deg);
+    }
+    50%{
+        width: 35px;
+        transform: rotate(-30deg);
+    }
+}
+.robot:hover .left_leg{
+    width: 20px;
+    transition:background-color 1.0s ease-in-out;
+    animation: left_hand_position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    transform-origin: top;
+}
+@keyframes left_leg_position{
+    0%{
+        width: 30px;
+        transform: rotate(0deg);
+    }
+    50%{
+        width: 35px;
+        transform: rotate(30deg);
+    }
+}
+.robot:hover .right_eye{
+    width: 20px;
+    transition:background-color 1.0s ease-in-out;
+    animation: right_eye_position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+@keyframes right_eye_position{
+    0%{
+        width: 30px;
+        transform: rotate(0deg);
+    }
+    50%{
+        width: 30px;
+        transform: rotate(10deg);
+    }
+}
+.robot:hover .left_eye{
+    width: 20px;
+    transition:background-color 1.0s ease-in-out;
+    animation: left_eye_position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+@keyframes left_eye_position{
+    0%{
+        width: 30px;
+        transform: rotate(0deg);
+    }
+    50%{
+        width: 30px;
+        transform: rotate(10deg);
+    }
+}
+
